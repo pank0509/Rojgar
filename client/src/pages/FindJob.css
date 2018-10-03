@@ -1,0 +1,34 @@
+.text-align-lg-right-xs-center {
+  text-align: right;
+}
+.slick-dots li button:before {
+  color: black;
+  font-size: 14px;
+  padding-top: 10px;
+}
+.custom-modal-width {
+  width: 110px;
+}
+.slider-image-border {
+  border: 2px solid #3BFFED;
+}
+.text-align-xs-center {
+
+}
+.margin-left-right-lg-25-xs-2 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+@media (max-width: 767px) {
+  .text-align-lg-right-xs-center {
+    text-align: center;
+  }
+  .text-align-xs-center {
+    text-align: center;
+  }
+  .margin-left-right-lg-25-xs-2 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+}

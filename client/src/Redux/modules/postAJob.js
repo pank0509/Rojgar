@@ -187,6 +187,6 @@ export function postAJobRequest(value) {
   }
   return {
     types: [POST_JOB_REQUEST, POST_JOB_SUCCESS, POST_JOB_FAILURE],
-    promise: (client) => client.post('/api/jobp', { data })
+    promise: (client) => client.post('/api/jobpost', { data })
   }
 }

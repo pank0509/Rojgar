@@ -677,6 +677,14 @@ body {
   border-radius: 8px;
   border: none;
 }
+.disble-button-style {
+  background-color: #d0d1d5;
+  color: white;
+  height: 50px;
+  box-shadow: 2px 2px 2px 2px #d0d1d5;
+  border-radius: 8px;
+  border: none;
+}
 
 .submit-button-style {
   background-color: rgb(88, 214, 141);

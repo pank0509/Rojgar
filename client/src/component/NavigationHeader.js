@@ -114,7 +114,7 @@ class NavigationHeader extends React.Component {
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                {/* <a className="navbar-brand" onClick={this.handleRojgarClicked} className="font40 margin-left-10">रोजगार</a> */}
+                <a className="navbar-brand" onClick={this.handleRojgarClicked} className="font40 margin-left-10">रोजगार</a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <div className="nav navbar-nav font20 margin-top-10">

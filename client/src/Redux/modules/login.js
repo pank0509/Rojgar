@@ -102,6 +102,7 @@ export function loginUserRequest(value) {
     username: value.phoneNumber,
     password: value.password,
   }
+  console.log('This is data while login', data);
   return {
     types: [LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAILURE],
     promise: (client) => client.post('/api/login', { data })

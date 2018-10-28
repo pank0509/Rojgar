@@ -349,10 +349,11 @@ export function onChangeOfAvgSalary(value) {
 }
 export function getPreFillInfo(value) {
   const data = {
-    firstName: value.firstName,
-    lastName: value.lastName,
-    username: value.username
+    firstName: 'john',
+    lastName: 'cena',
+    username: '7890'
   };
+  console.log('this is data in get preFilled info action', data);
   return {
     types: [GET_USER_DATA_REQUEST, GET_USER_DATA_SUCCESS, GET_USER_DATA_FAILURE],
     promise: (client) => client.post('/api/getuser/profile', { data })

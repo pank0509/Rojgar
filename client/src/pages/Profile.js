@@ -117,7 +117,6 @@ class Profile extends React.Component {
 
   /* End Validation funnction */
   render() {
-    console.log('this props in profile', this.state.firstNameNotValid);
     return (
       <div>
         {this.props.login.loginResponse && this.props.login.loginResponse.uaid ?

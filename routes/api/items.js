@@ -25,16 +25,15 @@ router.post("/register", (req, res) => {
 
 router.post("/login", passport.authenticate('local', {
     failureRedirect: '/api/login',
-}),
-    function (req, res) {
-        res.json({
-            uaid: req.user._id,
-            firstName: req.user.firstName,
-            lastName: req.user.lastName,
-            userType: req.user.userType,
-            username: req.user.username
-        });
-    },
+}), (req, res) => {
+    res.json({
+        uaid: req.user._id,
+        firstName: req.user.firstName,
+        lastName: req.user.lastName,
+        userType: req.user.userType,
+        username: req.user.username
+    });
+},
 );
 router.get('/logout', function (req, res) {
     req.logout();

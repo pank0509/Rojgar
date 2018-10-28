@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "This is shopping app with the use of mern stack",
   "main": "index.js",
+  "engines": {
+    "node": "10.10.0",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +26,8 @@
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.2.8",
     "passport": "^0.4.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "path-parser": "^4.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"

@@ -58,6 +58,7 @@
   "login.login.button": "लॉग इन करें",
   "info.submit.message": "हमारे साथ आपके विवरण साझा करने के लिए धन्यवाद, हमारी टीम जल्द से जल्द आपसे संपर्क करेगी।",
   "redirect.job.button": "आप के लिए नौकरी",
+  "redirect.afterjobpost.button": "एक और नौकरी पोस्ट करें",
   "validation.in.profile.firstname": "उपयोगकर्ता का पहला नाम खाली नहीं हो सकता है",
   "validation.in.profile.lastname": "उपयोगकर्ता अंतिम नाम खाली नहीं हो सकता है",
   "validation.in.profile.phonenumber": "उपयोगकर्ता फोन नंबर खाली नहीं हो सकता है"

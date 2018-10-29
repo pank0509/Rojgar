@@ -7,6 +7,7 @@ import NavigationHeader from './component/NavigationHeader';
 import JobsCard from './pages/JobsCard';
 import EmployeeCard from './pages/EmployeeCard';
 import MessageAndRedirectCard from './component/MessageAndRedirectCard';
+import MessageAfterJobPost from './component/MessageAfterJobPost';
 
 class Routes extends React.Component {
     render() {
@@ -17,6 +18,7 @@ class Routes extends React.Component {
                     <Route exact path="/job" component={JobsCard} />
                     <Route exact path="/employee" component={EmployeeCard} />
                     <Route exact path="/submit/message" component={MessageAndRedirectCard} />
+                    <Route exact path="/submit/afterjobpost" component={MessageAfterJobPost} />
                     <Route exact path="/postjob" component={PostAJob} />
                     <Route exact path="/profile" component={Profile} />
                 </NavigationHeader>

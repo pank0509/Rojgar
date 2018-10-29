@@ -58,6 +58,7 @@
   "login.login.button": "LOGIN",
   "info.submit.message": "Thanks for sharing your details with us, our team will get in touch with you as soon as possible.",
   "redirect.job.button": "JOB FOR YOU",
+  "redirect.afterjobpost.button": "Post another job",
   "validation.in.profile.firstname": "User First Name Cannot be empty",
   "validation.in.profile.lastname": "User Last Name Cannot be empty",
   "validation.in.profile.phonenumber": "User Phone Number Cannot be empty"

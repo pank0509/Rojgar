@@ -3,7 +3,8 @@ import { Row, Col } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
-import { phoneNumberValidation, validateRequired } from '../helper/adminComposeValidation';
+import { withRouter } from 'react-router'
+import { phoneNumberValidation } from '../helper/adminComposeValidation';
 
 import {
   onChangeOfContactPersonName,
@@ -51,17 +52,8 @@ class PostAJob extends React.Component {
     jobPostSuccess: false,
   }
   handlePostJob = () => {
-    console.log('This is job post');
     this.props.postAJobRequest(Object.assign({}, this.props.postAJob, this.props.login.loginResponse));
-    if (this.props.postAJob === 'success') {
-      this.setState({
-        jobPostSuccess: true,
-      });
-    } else {
-      this.setState({
-        jobPostSuccess: false,
-      });
-    }
+    this.props.history.push('/submit/afterjobpost');
   }
   handleContactPersonName = (event) => {
     this.props.onChangeOfContactPersonName(event.target.value);
@@ -336,7 +328,7 @@ class PostAJob extends React.Component {
           <div className="margin-top-bottom-20 text-align-center">
             <button
               onClick={this.handlePostJob}
-              disabled={this.state.phoneNumberValid}
+              disabled={!this.state.phoneNumberValid}
               className={this.state.phoneNumberValid
                 ?
                 'submit-button-style font20 font-bold half-width'
@@ -395,4 +387,4 @@ PostAJob.defaultProps = {
   login: {},
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PostAJob);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(PostAJob));

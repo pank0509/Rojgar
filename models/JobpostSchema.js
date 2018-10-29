@@ -10,8 +10,7 @@ const JobpostSchema = new Schema({
     type: String,
   },
   contactPersonName: {
-    type: String,
-    required: true
+    type: String
   },
   companyName: {
     type: String
@@ -20,17 +19,16 @@ const JobpostSchema = new Schema({
     type: String,
   },
   vacancy: {
-    type: Number,
+    type: String,
   },
   jobDescription: {
-    type: String,
-    required: true
+    type: String
   },
   minSalary: {
-    type: Number
+    type: String,
   },
   maxSalary: {
-    type: Number
+    type: String,
   },
   city: {
     type: String
@@ -45,7 +43,7 @@ const JobpostSchema = new Schema({
     type: String,
   },
   phoneNumber: {
-    type: Number,
+    type: String,
     required: true
   }
 });

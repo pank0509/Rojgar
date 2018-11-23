@@ -128,6 +128,7 @@ router.get("/employee", (req, res) => {
 })
 
 router.get("/getjob", (req, res) => {
+    
     Jobpost.find().limit(10).then(item => res.send({ item }));
 });
 

@@ -13,6 +13,7 @@
   "login.error.msg": "Please login to view this page",
   "login.error.exp": "Oops",
   "job.apply.button": "APPLY",
+  "job.applied.button": "APPLIED",
   "job.logintoapply.button": "LOGIN TO APPPLY",
   "post.contactperson": "Contact Person name",
   "post.companyname": "Company Name",

@@ -95,7 +95,10 @@ class JobsCard extends React.Component {
                   disabled
                   className="bg-gray border-none border-curved5 font-color-white padding-top-bottom-10 padding-left-right-20 font-bold font16"
                 >
-                  APPLIED
+                  <FormattedMessage
+                    id="job.applied.button"
+                    defaultMessage="APPLIED"
+                  />
                 </button>
                 :
                 <button

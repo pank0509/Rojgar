@@ -13,6 +13,7 @@
   "login.error.msg": "कृपया इस पेज को देखने के लिए लॉग इन करें",
   "login.error.exp": "उफ़",
   "job.apply.button": "आवेदन",
+  "job.applied.button": "आवेदन किया है",
   "job.logintoapply.button": "आवेदन करने के लिए लॉगिन करें",
   "post.contactperson": "संपर्क व्यक्ति",
   "post.companyname": "कंपनी का नाम",

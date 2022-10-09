@@ -92,7 +92,7 @@ class Home extends React.Component {
                             <img
                                 src={`${process.env.PUBLIC_URL}/images/image2.jpg`}
                                 className="full-width border-curved5 slider-image-border"
-                                alt=""
+                                alt="Hi I am ankit kumar"
                             />
                         </div>
                         <div className="padding-10">

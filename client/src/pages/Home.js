@@ -77,7 +77,6 @@ class Home extends React.Component {
                 },
             ],
         };
-        console.log('this props', this.props);
         return (
             <div className="margin-top-100">
                 <div className="margin-top-100">
